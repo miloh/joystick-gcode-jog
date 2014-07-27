@@ -74,3 +74,22 @@ is fed back with a short rumble (if supported by gamepad).
 To 'store' a current point in one of the six memory buttons, just do a
 long-press on the button (acknowledged by a short rumble). A short-press on
 that button will go back to that position.
+
+
+
+Auto-Start on a 2014 Series 1 Type A Machine
+--------------------------------------------
+ssh into your machine and clone this repo on your Series 1 machine
+
+install socat using 
+
+sudo apt-get install socat
+
+if you want to rebuild the binary, install any packages for building that aren't already installed 
+
+sudo apt-get install make
+
+install the udev rules and binary using the provided shell script
+
+$sudo installscript.sh
+
