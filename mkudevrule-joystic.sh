@@ -1,4 +1,4 @@
-cat > /etc/udev/rules.d/50-even.rules <<EOF
+cat > /etc/udev/rules.d/50-event.rules <<EOF
 KERNEL=="js*", ATTRS{idVendor}=="0e6f", GROUP="dialout", MODE="660" 
 
 KERNEL=="input*", ACTION=="add", ATTRS{idVendor}=="0e6f", \
