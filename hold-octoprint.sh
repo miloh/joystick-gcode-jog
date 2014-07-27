@@ -5,7 +5,7 @@ case  "$ACTION" in
 		# stop the octoprint service
 		sudo service octoprint stop
 		# and run the machine-jog.c program
-		socat EXEC:"/usr/bin/machine-jog -j /home/ubuntu/.js-conf/ -x 180 -z 50 -h -p savedpoints.data" /dev/ttyACM0,raw,echo=0,b230400
+		socat EXEC:"/usr/bin/machine-jog -j "$HOME"/.config/js-conf/ -x 220 -z 60 -h -p "$HOME"/.config/js-conf/savedpoints.data" /dev/ttyACM0,raw,echo=0,b230400
 		;;
 	remove)
  		# restart the octoprint service
